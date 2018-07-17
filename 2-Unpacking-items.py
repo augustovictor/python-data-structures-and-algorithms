@@ -28,4 +28,12 @@ for tag, *args in records:
         print_address(*args)
 
 #########################
+import heapq
 
+nums = [3, 1, -2, 5, 10, 19, -20, 41]
+
+threeLargest = heapq.nlargest(3, nums)
+print(threeLargest)
+
+threeSmallest = heapq.nsmallest(3, nums)
+print(threeSmallest)
